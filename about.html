@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Utkarsh Web</title>
+  <meta name="description" content="Utkarsh Web के बारे में: ₹500 में 5-पेज कस्टम वेबसाइट—portfolio और reputation बनाने पर फोकस।" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="min-h-screen">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[999] bg-white text-[color:var(--brand-900)] px-4 py-2 rounded-lg shadow">मुख्य कंटेंट पर जाएँ</a>
+
+  <header class="sticky top-0 z-50 bg-[color:var(--brand-900)] text-white border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between py-3">
+        <a href="index.html" class="flex items-center gap-2 font-semibold tracking-tight">
+          <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-white/10 border border-white/10">UW</span>
+          <span>Utkarsh Web</span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-1" aria-label="Primary">
+          <a class="px-3 py-2 rounded-lg hover:bg-white/10" href="index.html">Home</a>
+          <a class="px-3 py-2 rounded-lg hover:bg-white/10" href="about.html">About</a>
+          <a class="px-3 py-2 rounded-lg hover:bg-white/10" href="services.html">Services</a>
+          <a class="px-3 py-2 rounded-lg hover:bg-white/10" href="portfolio.html">Portfolio</a>
+          <a class="px-3 py-2 rounded-lg hover:bg-white/10" href="order.html">Order</a>
+        </nav>
+
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-lg p-2 hover:bg-white/10" aria-label="मेनू" aria-controls="mobileMenu" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div id="mobileMenu" class="md:hidden hidden mobile-panel pb-3">
+        <nav class="grid gap-1" aria-label="Mobile">
+          <a class="px-3 py-2 rounded-lg hover:bg-white/10" href="index.html">Home</a>
+          <a class="px-3 py-2 rounded-lg hover:bg-white/10" href="about.html">About</a>
+          <a class="px-3 py-2 rounded-lg hover:bg-white/10" href="services.html">Services</a>
+          <a class="px-3 py-2 rounded-lg hover:bg-white/10" href="portfolio.html">Portfolio</a>
+          <a class="px-3 py-2 rounded-lg hover:bg-white/10" href="order.html">Order</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="bg-[color:var(--brand-900)] text-white">
+      <div class="max-w-6xl mx-auto px-4 py-12 md:py-16">
+        <h1 class="text-3xl md:text-4xl font-semibold tracking-tight">About Us</h1>
+        <p class="mt-3 text-white/80 max-w-3xl leading-relaxed">
+          मेरा नाम उत्कर्ष  है। मैं पोर्टफोलियो और प्रतिष्ठा बनाने पर केंद्रित हूँ, इसलिए मैं केवल ₹500 में कस्टम HTML/CSS/JS वेबसाइटें बनाता हूँ।
+        </p>
+        <div class="mt-7 grid md:grid-cols-3 gap-5">
+          <div class="rounded-3xl bg-white/10 border border-white/10 p-6">
+            <h2 class="font-semibold text-lg">मेरा फोकस</h2>
+            <p class="mt-2 text-white/80">Clean UI, fast loading, और mobile-first usability—ताकि आपकी online presence strong लगे।</p>
+          </div>
+          <div class="rounded-3xl bg-white/10 border border-white/10 p-6">
+            <h2 class="font-semibold text-lg">क्यों ₹500?</h2>
+            <p class="mt-2 text-white/80">मैं reputation build कर रहा हूँ—इसलिए budget-friendly pricing के साथ quality deliver करता हूँ।</p>
+          </div>
+          <div class="rounded-3xl bg-white/10 border border-white/10 p-6">
+            <h2 class="font-semibold text-lg">काम करने का तरीका</h2>
+            <p class="mt-2 text-white/80">Checklist-based: final content + images + reference link मिलते ही timeline start होता है।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 py-12 md:py-16">
+      <div class="grid md:grid-cols-2 gap-8 items-start">
+        <article class="rounded-3xl bg-white border border-black/5 shadow-sm p-7">
+          <h2 class="text-xl font-semibold">What you can expect</h2>
+          <ul class="mt-4 space-y-3 text-slate-700">
+            <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-[color:var(--accent-400)]"></span><span>Transparent communication & timelines</span></li>
+            <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-[color:var(--accent-400)]"></span><span>Responsive design (mobile → desktop)</span></li>
+            <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-[color:var(--accent-400)]"></span><span>Clean code + simple structure</span></li>
+            <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-[color:var(--accent-400)]"></span><span>30-day technical support window</span></li>
+          </ul>
+        </article>
+
+        <aside class="rounded-3xl bg-[color:var(--brand-900)] text-white p-7 relative overflow-hidden">
+          <div class="absolute -top-10 -right-10 h-40 w-40 rounded-full bg-[color:var(--accent-400)]/25 blur-2xl"></div>
+          <h2 class="text-xl font-semibold">Next step</h2>
+          <p class="mt-2 text-white/80">अगर आप ₹500 package के साथ शुरुआत करना चाहते हैं—Order page पर details भर दें।</p>
+          <div class="mt-5 flex flex-col sm:flex-row gap-3">
+            <a href="order.html" class="inline-flex justify-center items-center rounded-xl px-5 py-3 font-semibold bg-[color:var(--accent-400)] text-[color:var(--brand-900)]">ऑर्डर करें</a>
+            <a href="services.html" class="inline-flex justify-center items-center rounded-xl px-5 py-3 font-semibold bg-white/10 border border-white/15 hover:bg-white/15">पैकेज देखें</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[color:var(--brand-900)] text-white">
+    <div class="max-w-6xl mx-auto px-4 py-8">
+      <div class="flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
+        <p class="text-white/80">© <span id="year"></span> Utkarsh Web. All rights reserved.</p>
+        <a class="text-[color:var(--accent-400)] hover:underline" href="https://www.instagram.com/utkarsh16144?igsh=djl1eHA3Ym42cGp0" target="_blank" rel="noopener">Instagram: @utkarsh16144</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const yearEl = document.getElementById('year');
+      if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+      const btn = document.getElementById('menuBtn');
+      const menu = document.getElementById('mobileMenu');
+      if (btn && menu){
+        const setExpanded = (v) => btn.setAttribute('aria-expanded', v ? 'true' : 'false');
+        const close = () => { menu.classList.add('hidden'); setExpanded(false); };
+        const toggle = () => {
+          const isHidden = menu.classList.contains('hidden');
+          menu.classList.toggle('hidden');
+          setExpanded(isHidden);
+        };
+        btn.addEventListener('click', toggle);
+        menu.addEventListener('click', (e) => { const a = e.target.closest('a'); if (a) close(); });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+      }
+
+      const path = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+      document.querySelectorAll('nav a[href]').forEach(a => {
+        const href = (a.getAttribute('href') || '').toLowerCase();
+        if (href === path) a.classList.add('bg-white/10');
+      });
+    })();
+  </script>
+</body>
+  </html>
