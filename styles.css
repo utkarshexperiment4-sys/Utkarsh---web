@@ -1,0 +1,42 @@
+:root{
+  --brand-900:#0B1F3A; /* dark blue */
+  --brand-800:#0E2B52;
+  --accent-400:#FBBF24; /* light yellow/orange */
+  --paper:#FFFFFF;
+}
+
+html,body{height:100%;}
+body{
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  background: linear-gradient(180deg, rgba(11,31,58,0.06), rgba(251,191,36,0.06));
+  color: #0b1220;
+}
+
+/* Make focus clearly visible (mobile + keyboard users) */
+:where(a, button, input, select, textarea):focus-visible{
+  outline: 3px solid rgba(251,191,36,0.9);
+  outline-offset: 2px;
+}
+
+/* Smoothen mobile menu transitions */
+.mobile-panel{
+  transform-origin: top;
+}
+
+/* Simple glass utility for cards */
+.glass{
+  background: rgba(255,255,255,0.78);
+  backdrop-filter: blur(10px);
+}
+
+/* Subtle dotted grid for hero */
+.hero-grid{
+  background-image:
+    radial-gradient(rgba(255,255,255,0.10) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce){
+  *{scroll-behavior:auto !important; transition:none !important; animation:none !important;}
+}
